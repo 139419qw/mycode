@@ -3,5 +3,5 @@ This is a basic gaussian mixture model based on "Adaptive background mixture mod
 
 Notice that this is different from the cv.BackgroundSubtractorMOG2.
 
-
-If you have some problem using that,feel free to contact me
+I'll be very glad to hear your advice
+If you have some problem using that,feel free to contact me.
