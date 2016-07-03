@@ -1,4 +1,4 @@
-# Gaussian Mixture Model For Background Subtraction
+# Gaussian Mixture Model(GMM or MoG) For Background Subtraction
 This is a basic gaussian mixture model based on "Adaptive background mixture models for real-time tracking" by C.Stauffer for background subtraction using c++ and opencv.
 
 Notice that this is different from the cv.BackgroundSubtractorMOG2.
