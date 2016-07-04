@@ -42,8 +42,8 @@ int main()
 		{
 			for (c = 0; c < img0.cols; c++)
 			{
-				flag = p1[r][c].gmm_bgs(&p1[r][c], intensity);
 				intensity = img0.at<Vec3b>(r, c);
+				flag = p1[r][c].gmm_bgs(&p1[r][c], intensity);
 				if (0 == flag)											//0 == flag means foreground
 				{
 					img.at<uchar>(r, c) = 255;
