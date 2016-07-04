@@ -9,6 +9,8 @@
 #include <map>
 #include <math.h>
 #include <algorithm>
+#include <functional>
+
 
 #define  VAR_INIT	256.0
 #define  pi			3.1415926
