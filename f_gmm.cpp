@@ -88,12 +88,12 @@ bool gmm_c::gmm_bgs(gmm_c *p, cv::Vec3b n_p)
 		{
 			pairs[i] = make_pair(p->weight[i] / p->var[i], i);
 		}
-		sort(pairs.begin(), pairs.end());
+		sort(pairs.begin(), pairs.end(),greater<pair<double,int>>());
 		wsum = 0;
 		flag = 0;
 		for (cnt = 0; cnt < p->mode_cnt; cnt++)				//equation 9 in paper
 		{
-			s_n = pairs[p->mode_cnt - 1 - cnt].second;
+			s_n = pairs[cnt].second;
 			dB = pow(p->m_b[s_n] - b_p, 2);
 			dG = pow(p->m_g[s_n] - g_p, 2);
 			dR = pow(p->m_r[s_n] - r_p, 2);
